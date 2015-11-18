@@ -33,7 +33,7 @@ import java.util.Map;
  */
 public class PJSDK {
 
-    public static final String SDK_VERSION = "3.1";
+    public static final String SDK_VERSION = "3.2";
 
     private static Context mContext;
     private static int mAppId;
