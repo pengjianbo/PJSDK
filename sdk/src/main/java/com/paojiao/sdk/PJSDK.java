@@ -66,10 +66,6 @@ public class PJSDK {
         mShowSplash = showSplash;
         mPJSDK = new PJSDK();
 
-        if (showSplash) {
-            mPJSDK.showSplash();
-        }
-
         try {
             mContext.bindService(new Intent(mContext, FloatViewService.class), mServiceConnection, Context.BIND_AUTO_CREATE);
         } catch (Exception e) {
@@ -94,10 +90,6 @@ public class PJSDK {
         mPJSDK.statSDK();
 
         return mPJSDK;
-    }
-
-    private void showSplash() {
-
     }
 
     /**
