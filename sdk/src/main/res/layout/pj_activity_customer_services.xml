@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/pj_corner_background_above"
+        >
+
+        <ImageView
+            android:id="@+id/pj_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pj_background_web_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:text="客服"
+            android:layout_centerInParent="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pj_btn_back_game"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="回到游戏"
+            android:background="@drawable/pj_button_login_transfer"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffbe0115"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/pj_serivce"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+    
+    <TextView
+        android:id="@+id/tv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+    
+    
+     <TextView
+        android:id="@+id/tv_qq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+    
+    <TextView
+        android:id="@+id/tv_phone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击QQ可以复制QQ号，点击电话可直接拨打电话！"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        />
+</LinearLayout>

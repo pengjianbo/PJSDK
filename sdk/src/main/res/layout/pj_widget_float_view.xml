@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/pj_menu_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/pj_menu_account"
+            android:padding="4dp"
+            android:text="账号"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/tv_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/pj_menu_fb"
+            android:padding="4dp"
+            android:text="客服"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pj_float_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/pj_float_view_icon_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/pj_image_float_logo"
+            />
+
+        <ImageView
+            android:id="@+id/pj_float_view_icon_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pj_anim_background"
+            />
+    </FrameLayout>
+
+</FrameLayout>

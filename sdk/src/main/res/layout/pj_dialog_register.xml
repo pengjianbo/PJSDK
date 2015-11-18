@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pj_corner_background_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/pj_corner_background_above"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pj_image_title_logo"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/pj_btn_login"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="登录"
+            android:background="@drawable/pj_button_login_transfer"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ffbe0115"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/pj_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/pj_login_username_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/pj_image_icon_username"
+                android:drawablePadding="10dp"
+                android:imeOptions="actionGo"
+                android:background="@drawable/pj_background_input"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:hint="用户名:6-16位字、数字"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@null"
+                android:textColor="#000000">
+            </EditText>
+
+            <EditText
+                android:id="@+id/pj_login_password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/pj_background_input"
+                android:drawableLeft="@drawable/pj_image_icon_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:hint="密码:6-30位字、数字"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#BBBBBB"
+                android:textSize="14sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/pj_cfm_password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/pj_background_input"
+                android:drawableLeft="@drawable/pj_image_icon_password"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:hint="确认登录密码"
+                android:textCursorDrawable="@null"
+                android:textColorHint="#BBBBBB"
+                android:textSize="14sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/pj_reg_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/pj_button_bg_red"
+                android:textColor="#ffff0000"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:text="注册"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
