@@ -20,6 +20,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'com.paojiao:sdk:3.2'
+
 }
 
 apply from: 'https://raw.githubusercontent.com/FinalTeam/ToolsFinal/master/bintray.gradle'
